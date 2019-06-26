@@ -7,6 +7,7 @@ GPIO.output(LED, False)
 status = 0
 while True:
     cmd = input('Enter your command as "ON" , "OFF" or "Q": ')
+    # U might have to use raw_input() function if using python2
     cmd = cmd.lower()
     if cmd == "on":
         if status == 1 :
